@@ -6,10 +6,13 @@
 package fr.miage.toulouse.entities;
 
 import java.io.Serializable;
+import java.util.Calendar;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
 
 /**
  *
@@ -17,6 +20,52 @@ import javax.persistence.Id;
  */
 @Entity
 public class Operation implements Serializable {
+
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
+    private Calendar dateOp;
+    private String typeOp;
+    private double montantOp;
+    @ManyToOne
+    private Compte compte;
+    
+    public Operation() {
+    }
+    
+    public Calendar getDateOp() {
+        return dateOp;
+    }
+
+    public String getTypeOp() {
+        return typeOp;
+    }
+
+    public double getMontantOp() {
+        return montantOp;
+    }
+
+    public Compte getCompte() {
+        return compte;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public void setDateOp(Calendar dateOp) {
+        this.dateOp = dateOp;
+    }
+
+    public void setTypeOp(String typeOp) {
+        this.typeOp = typeOp;
+    }
+
+    public void setMontantOp(double montantOp) {
+        this.montantOp = montantOp;
+    }
+
+    public void setCompte(Compte compte) {
+        this.compte = compte;
+    }
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -54,6 +103,5 @@ public class Operation implements Serializable {
     @Override
     public String toString() {
         return "fr.miage.toulouse.entities.Operation[ id=" + id + " ]";
-    }
-    
+    }    
 }

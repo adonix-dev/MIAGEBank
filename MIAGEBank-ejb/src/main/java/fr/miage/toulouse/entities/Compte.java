@@ -6,10 +6,14 @@
 package fr.miage.toulouse.entities;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -17,6 +21,34 @@ import javax.persistence.Id;
  */
 @Entity
 public class Compte implements Serializable {
+    
+    private double solde;
+    @ManyToOne
+    private Client propietaire;
+    @OneToMany(mappedBy = "compte")
+    private List<Operation> listeOperation;
+    
+    public Compte() {
+    }
+   
+    public double getSolde() {
+        return solde;
+    }
+
+    public void setSolde(double solde) {
+        this.solde = solde;
+    }
+
+    public Client getProprietaire() {
+        return proprietaire;
+    }
+
+    public void setProprietaire(Client proprietaire) {
+        this.proprietaire = proprietaire;
+    }
+    
+    @ManyToOne
+    private Client proprietaire;
 
     private static final long serialVersionUID = 1L;
     @Id

@@ -3,6 +3,8 @@ C:\Users\AntonyLaget\OneDrive - MIAGE\Miage\M1\S8\Application d'Entreprise\TP\MI
 C:\Users\AntonyLaget\OneDrive - MIAGE\Miage\M1\S8\Application d'Entreprise\TP\MIAGEBank\MIAGEBank-ejb\src\main\java\fr\miage\toulouse\entities\Operation.java
 C:\Users\AntonyLaget\OneDrive - MIAGE\Miage\M1\S8\Application d'Entreprise\TP\MIAGEBank\MIAGEBank-ejb\src\main\java\fr\miage\toulouse\facades\ClientFacade.java
 C:\Users\AntonyLaget\OneDrive - MIAGE\Miage\M1\S8\Application d'Entreprise\TP\MIAGEBank\MIAGEBank-ejb\src\main\java\fr\miage\toulouse\facades\OperationFacadeLocal.java
+C:\Users\AntonyLaget\OneDrive - MIAGE\Miage\M1\S8\Application d'Entreprise\TP\MIAGEBank\MIAGEBank-ejb\src\main\java\fr\miage\toulouse\metier\GestionCompteLocal.java
+C:\Users\AntonyLaget\OneDrive - MIAGE\Miage\M1\S8\Application d'Entreprise\TP\MIAGEBank\MIAGEBank-ejb\src\main\java\fr\miage\toulouse\metier\GestionCompte.java
 C:\Users\AntonyLaget\OneDrive - MIAGE\Miage\M1\S8\Application d'Entreprise\TP\MIAGEBank\MIAGEBank-ejb\src\main\java\fr\miage\toulouse\facades\ClientFacadeLocal.java
 C:\Users\AntonyLaget\OneDrive - MIAGE\Miage\M1\S8\Application d'Entreprise\TP\MIAGEBank\MIAGEBank-ejb\src\main\java\fr\miage\toulouse\facades\OperationFacade.java
 C:\Users\AntonyLaget\OneDrive - MIAGE\Miage\M1\S8\Application d'Entreprise\TP\MIAGEBank\MIAGEBank-ejb\src\main\java\fr\miage\toulouse\facades\CompteFacade.java
